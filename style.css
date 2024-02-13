@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('3B519F5B-DFD5-4121-A403-C18A5D677A17.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10%; /* Padding to ensure content isn't stuck to the very edge */
+}
+
+.dialogue {
+    text-align: left; /* Align text to the left */
+}
+
+.question {
+    font-size: 2em;
+    color: #fff; /* Adjust the text color if needed for visibility */
+    text-shadow: 2px 2px 4px #000; /* Text shadow for better readability */
+}
+
+button {
+    display: block; /* Make buttons block level for full width */
+    margin-top: 20px; /* Margin at the top for spacing */
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: red;
+}
+
+button#noButton {
+    position: fixed; /* Using fixed to keep the button within the viewport */
+    transition: top 0.5s, left 0.5s;
+}
